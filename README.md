@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## tailwind css install / Doc
 
-## Getting Started
+```
+  1. npm install -D tailwindcss postcss autoprefixer
+     npx tailwindcsss init -p
 
-First, run the development server:
+  2. vscode -> extensions
+  tailwind css intellisense install  <- auto color / 자동 완성
 
-```bash
-npm run dev
-# or
-yarn dev
+  3. create poscss.config + tailwind.config.js
+     ex) content: [
+        "./pages/**/*.{js,jsx,ts,tsx}" <- ** All folders / * All files
+     ]
+  4. styles/globals.css
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Learn
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+className
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    border-dashed <- 점선
+    shadow-xl <- 그림자,사이즈
+    fonet-semibold <- 폰트 사이즈
+    w-2/4 <- width 50%
+    overflow-hidden
+    relative <- position: relative
+    focus:text-red-500
+    ring-2 ring-offset-1 <- 링 생성
+    aspect-square <- 정확한 사각형 생성 aspect-radiol 1/1;
+    transition-colors <- 컬러 말고도 다른 요소 있음.
