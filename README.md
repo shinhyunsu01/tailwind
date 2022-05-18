@@ -31,3 +31,11 @@ className
     ring-2 ring-offset-1 <- 링 생성
     aspect-square <- 정확한 사각형 생성 aspect-radiol 1/1;
     transition-colors <- 컬러 말고도 다른 요소 있음.
+    first:bg-blue-50
+    ```
+        <ul className="first:bg-blue-50 last:bg-red-50">
+            <div /> <- 첫번째 요소만 blue로 변경
+            <div />
+            <div /> <- 마지막 요소만 red로 변경
+        </ul>
+    ```
