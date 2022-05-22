@@ -37,6 +37,9 @@ className
     list-decimal <- ul 태그에서 1. 2. 3. <-  이표시를 점으로 교체
     marker:text-teal-500 <- 1. 2.3. <- 색상 변경
     first-letter <- 첫번쨰 글자 선택.
+    
+    appearance-none <- 기존 스타일 리셋!
+    space-x-1.5 <- 자시들 한테도 space 공간 적용
 
 ```
 <ul className="first:bg-blue-50 last:bg-red-50">
